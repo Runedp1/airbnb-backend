@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const db = require('../config/db');  // Import database connection
+const db = require('../classes/db');  // Import database connection
 
 // Get all users
 router.get('/', (req, res) => {
@@ -26,4 +26,3 @@ router.post('/', (req, res) => {
         }
     );
 });
-
